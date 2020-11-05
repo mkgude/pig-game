@@ -68,8 +68,8 @@ btnHold.addEventListener("click", function(){
         // add current score to global score of active player
         scores[activePlayer] += currentScore
         document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer]
-        // check if score is >= 100, if so, finish game
-        if (scores[activePlayer] >= 20){
+        // check if score is >= (some number), if so, finish game
+        if (scores[activePlayer] >= 50){
             playing = false
             diceEl.classList.add("hidden")
             // finish game
